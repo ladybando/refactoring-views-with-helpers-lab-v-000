@@ -17427,3 +17427,5 @@ Started GET "/songs" for 127.0.0.1 at 2019-02-12 19:57:35 +0000
 Processing by SongsController#index as HTML
   [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
   Rendered songs/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 290ms (Views: 289.0ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.4ms)[0m  rollback transaction
