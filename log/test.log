@@ -17620,3 +17620,7 @@ Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
 Started GET "/songs" for 127.0.0.1 at 2019-02-12 20:03:45 +0000
 Processing by SongsController#index as HTML
   [1m[36mSong Load (0.2ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 123]]
+  Rendered songs/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 290ms (Views: 288.9ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
